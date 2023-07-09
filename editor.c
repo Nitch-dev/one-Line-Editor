@@ -24,14 +24,12 @@ int start(){
   else if(strcmp(c,"q")== 0) {
     printf("quitting..");
     remove("temp.txt");
-    return 0;
   }
   else if(strcmp(c,"w") == 0 ) {
     printf("Enter file name: ");
     scanf("%s",filename);
     write(filename);
     main();
-    return 0;
   }
   else {
     printf("?");
